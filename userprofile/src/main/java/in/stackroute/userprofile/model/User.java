@@ -2,7 +2,8 @@ package in.stackroute.userprofile.model;
 
 
 import javax.persistence.*;
-
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 
 
@@ -10,6 +11,12 @@ import javax.persistence.*;
 @Table(name = "REGD_USERS")
 public class User {
 
+//    private Logger logger=LoggerFactory.getLogger(User.class);
+    //pojo class logger me problem
+    //what is trace logger
+    //how to add logging in interface
+
+    
     @Id //primary key
     @Column(name = "user_id")
     @GeneratedValue(strategy = GenerationType.IDENTITY) //auto increment value

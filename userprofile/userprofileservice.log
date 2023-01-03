@@ -1917,3 +1917,705 @@ Caused by: org.hibernate.MappingException: Could not determine type for: org.slf
 2023-01-03 19:31:59.449  INFO 10152 --- [http-nio-9001-exec-2] i.s.userprofile.aspect.LoggingAspect     : Inside the After advice
 2023-01-03 19:31:59.450  INFO 10152 --- [http-nio-9001-exec-2] i.s.userprofile.aspect.LoggingAspect     : Target method is loginUser
 2023-01-03 19:31:59.451  INFO 10152 --- [http-nio-9001-exec-2] i.s.userprofile.aspect.LoggingAspect     : loginUser completed execution
+2023-01-03 19:36:51.187  INFO 10152 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-01-03 19:41:51.199  INFO 10152 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-01-03 19:46:51.216  INFO 10152 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-01-03 19:49:24.918  INFO 10152 --- [SpringApplicationShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application USER-PROFILE-SERVICE with eureka with status DOWN
+2023-01-03 19:49:24.919  INFO 10152 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1672755564919, current=DOWN, previous=UP]
+2023-01-03 19:49:24.921  INFO 10152 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USER-PROFILE-SERVICE/192.168.1.39:user-profile-service:9001: registering service...
+2023-01-03 19:49:24.992  INFO 10152 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USER-PROFILE-SERVICE/192.168.1.39:user-profile-service:9001 - registration status: 204
+2023-01-03 19:49:25.168  INFO 10152 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-01-03 19:49:25.257  INFO 10152 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-01-03 19:49:25.411  INFO 10152 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-01-03 19:49:25.413  INFO 10152 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2023-01-03 19:49:28.427  INFO 10152 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2023-01-03 19:49:28.492  INFO 10152 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USER-PROFILE-SERVICE/192.168.1.39:user-profile-service:9001 - deregister  status: 200
+2023-01-03 19:49:28.505  INFO 10152 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2023-01-03 19:49:51.927  INFO 16504 --- [main] i.s.userprofile.UserprofileApplication   : Starting UserprofileApplication using Java 17.0.5 on LAPTOP-0JDK5SNE with PID 16504 (C:\natwest\Spring\Microservices\userprofile\target\classes started by Admin in C:\natwest\Spring\Microservices\userprofile)
+2023-01-03 19:49:51.930 DEBUG 16504 --- [main] i.s.userprofile.UserprofileApplication   : Running with Spring Boot v2.7.6, Spring v5.3.24
+2023-01-03 19:49:51.931  INFO 16504 --- [main] i.s.userprofile.UserprofileApplication   : No active profile set, falling back to 1 default profile: "default"
+2023-01-03 19:49:53.752  INFO 16504 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-01-03 19:49:53.999  INFO 16504 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 236 ms. Found 1 JPA repository interfaces.
+2023-01-03 19:49:54.680  INFO 16504 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=7c2aad3b-8b08-3530-8632-ed1d09072b20
+2023-01-03 19:49:55.772  INFO 16504 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9001 (http)
+2023-01-03 19:49:55.773  INFO 16504 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.35] using APR version [1.7.0].
+2023-01-03 19:49:55.773  INFO 16504 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2023-01-03 19:49:55.774  INFO 16504 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2023-01-03 19:49:55.778  INFO 16504 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1q  5 Jul 2022]
+2023-01-03 19:49:55.789  INFO 16504 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-01-03 19:49:55.789  INFO 16504 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.69]
+2023-01-03 19:49:56.027  INFO 16504 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-01-03 19:49:56.028  INFO 16504 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3982 ms
+2023-01-03 19:49:56.674  INFO 16504 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-01-03 19:49:56.808  INFO 16504 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.14.Final
+2023-01-03 19:49:57.218  INFO 16504 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-01-03 19:49:57.483  INFO 16504 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-01-03 19:49:59.115  INFO 16504 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-01-03 19:49:59.193  INFO 16504 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-01-03 19:50:01.158  INFO 16504 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-01-03 19:50:01.164  INFO 16504 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-01-03 19:50:02.298  WARN 16504 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-01-03 19:50:03.263  INFO 16504 --- [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2023-01-03 19:50:03.452  WARN 16504 --- [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2023-01-03 19:50:03.509  INFO 16504 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2023-01-03 19:50:03.839  INFO 16504 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2023-01-03 19:50:03.847  INFO 16504 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-01-03 19:50:03.913  INFO 16504 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2023-01-03 19:50:03.914  INFO 16504 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2023-01-03 19:50:03.914  INFO 16504 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2023-01-03 19:50:03.915  INFO 16504 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2023-01-03 19:50:03.915  INFO 16504 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2023-01-03 19:50:03.915  INFO 16504 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2023-01-03 19:50:03.915  INFO 16504 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2023-01-03 19:50:04.555  INFO 16504 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2023-01-03 19:50:04.561  INFO 16504 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2023-01-03 19:50:04.564  INFO 16504 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2023-01-03 19:50:04.572  INFO 16504 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1672755604570 with initial instances count: 1
+2023-01-03 19:50:04.578  INFO 16504 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application USER-PROFILE-SERVICE with eureka with status UP
+2023-01-03 19:50:04.588  INFO 16504 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1672755604588, current=UP, previous=STARTING]
+2023-01-03 19:50:04.590  INFO 16504 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USER-PROFILE-SERVICE/192.168.1.39:user-profile-service:9001: registering service...
+2023-01-03 19:50:04.659  INFO 16504 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9001 (http) with context path ''
+2023-01-03 19:50:04.660  INFO 16504 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 9001
+2023-01-03 19:50:04.688  INFO 16504 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USER-PROFILE-SERVICE/192.168.1.39:user-profile-service:9001 - registration status: 204
+2023-01-03 19:50:05.042  INFO 16504 --- [main] i.s.userprofile.UserprofileApplication   : Started UserprofileApplication in 14.232 seconds (JVM running for 15.162)
+2023-01-03 19:52:11.022  INFO 16504 --- [http-nio-9001-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-01-03 19:52:11.023  INFO 16504 --- [http-nio-9001-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-01-03 19:52:11.027  INFO 16504 --- [http-nio-9001-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2023-01-03 19:52:11.257  INFO 16504 --- [http-nio-9001-exec-1] i.s.userprofile.model.UserCredentials    : setEmail function called....devendra
+2023-01-03 19:52:11.258  INFO 16504 --- [http-nio-9001-exec-1] i.s.userprofile.model.UserCredentials    : setPassword function called....devendra
+2023-01-03 19:52:11.272  INFO 16504 --- [http-nio-9001-exec-1] i.s.userprofile.aspect.LoggingAspect     : Inside the before advice
+2023-01-03 19:52:11.274  INFO 16504 --- [http-nio-9001-exec-1] i.s.userprofile.aspect.LoggingAspect     : Target method is loginUser
+2023-01-03 19:52:11.294  INFO 16504 --- [http-nio-9001-exec-1] i.s.userprofile.model.UserCredentials    : getEmail function called....devendra
+2023-01-03 19:52:12.069  INFO 16504 --- [http-nio-9001-exec-1] i.s.userprofile.model.UserCredentials    : getPassword function called....devendra
+2023-01-03 19:52:12.084  INFO 16504 --- [http-nio-9001-exec-1] i.s.userprofile.aspect.LoggingAspect     : Inside the After Returning advice
+2023-01-03 19:52:12.085  INFO 16504 --- [http-nio-9001-exec-1] i.s.userprofile.aspect.LoggingAspect     : Target method is loginUser
+2023-01-03 19:52:12.085  INFO 16504 --- [http-nio-9001-exec-1] i.s.userprofile.aspect.LoggingAspect     : Returned value is <200 OK OK,[]>
+2023-01-03 19:52:12.085  INFO 16504 --- [http-nio-9001-exec-1] i.s.userprofile.aspect.LoggingAspect     : Inside the After advice
+2023-01-03 19:52:12.086  INFO 16504 --- [http-nio-9001-exec-1] i.s.userprofile.aspect.LoggingAspect     : Target method is loginUser
+2023-01-03 19:52:12.086  INFO 16504 --- [http-nio-9001-exec-1] i.s.userprofile.aspect.LoggingAspect     : loginUser completed execution
+2023-01-03 19:55:03.928  INFO 16504 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-01-03 19:55:40.201  INFO 16504 --- [http-nio-9001-exec-3] i.s.userprofile.model.UserCredentials    : setEmail function called....devendra
+2023-01-03 19:55:40.203  INFO 16504 --- [http-nio-9001-exec-3] i.s.userprofile.model.UserCredentials    : setPassword function called....devendra
+2023-01-03 19:55:40.204  INFO 16504 --- [http-nio-9001-exec-3] i.s.userprofile.aspect.LoggingAspect     : Inside the before advice
+2023-01-03 19:55:40.205  INFO 16504 --- [http-nio-9001-exec-3] i.s.userprofile.aspect.LoggingAspect     : Target method is loginUser
+2023-01-03 19:55:40.205  INFO 16504 --- [http-nio-9001-exec-3] i.s.userprofile.model.UserCredentials    : getEmail function called....devendra
+2023-01-03 19:55:40.212  INFO 16504 --- [http-nio-9001-exec-3] i.s.userprofile.model.UserCredentials    : getPassword function called....devendra
+2023-01-03 19:55:40.213  INFO 16504 --- [http-nio-9001-exec-3] i.s.userprofile.aspect.LoggingAspect     : Inside the After Returning advice
+2023-01-03 19:55:40.213  INFO 16504 --- [http-nio-9001-exec-3] i.s.userprofile.aspect.LoggingAspect     : Target method is loginUser
+2023-01-03 19:55:40.213  INFO 16504 --- [http-nio-9001-exec-3] i.s.userprofile.aspect.LoggingAspect     : Returned value is <200 OK OK,[]>
+2023-01-03 19:55:40.214  INFO 16504 --- [http-nio-9001-exec-3] i.s.userprofile.aspect.LoggingAspect     : Inside the After advice
+2023-01-03 19:55:40.217  INFO 16504 --- [http-nio-9001-exec-3] i.s.userprofile.aspect.LoggingAspect     : Target method is loginUser
+2023-01-03 19:55:40.218  INFO 16504 --- [http-nio-9001-exec-3] i.s.userprofile.aspect.LoggingAspect     : loginUser completed execution
+2023-01-03 19:55:49.568  INFO 16504 --- [http-nio-9001-exec-4] i.s.userprofile.model.UserCredentials    : setEmail function called....devendra
+2023-01-03 19:55:49.568  INFO 16504 --- [http-nio-9001-exec-4] i.s.userprofile.model.UserCredentials    : setPassword function called....devendra
+2023-01-03 19:55:49.569  INFO 16504 --- [http-nio-9001-exec-4] i.s.userprofile.aspect.LoggingAspect     : Inside the before advice
+2023-01-03 19:55:49.570  INFO 16504 --- [http-nio-9001-exec-4] i.s.userprofile.aspect.LoggingAspect     : Target method is loginUser
+2023-01-03 19:55:49.570  INFO 16504 --- [http-nio-9001-exec-4] i.s.userprofile.model.UserCredentials    : getEmail function called....devendra
+2023-01-03 19:55:49.574  INFO 16504 --- [http-nio-9001-exec-4] i.s.userprofile.model.UserCredentials    : getPassword function called....devendra
+2023-01-03 19:55:49.575  INFO 16504 --- [http-nio-9001-exec-4] i.s.userprofile.aspect.LoggingAspect     : Inside the After Throwing advice
+2023-01-03 19:55:49.575  INFO 16504 --- [http-nio-9001-exec-4] i.s.userprofile.aspect.LoggingAspect     : Target method is authenticateUser
+2023-01-03 19:55:49.575  INFO 16504 --- [http-nio-9001-exec-4] i.s.userprofile.aspect.LoggingAspect     : Exception thrown InValid credentials
+2023-01-03 19:55:49.576  INFO 16504 --- [http-nio-9001-exec-4] i.s.userprofile.aspect.LoggingAspect     : Inside the After advice
+2023-01-03 19:55:49.576  INFO 16504 --- [http-nio-9001-exec-4] i.s.userprofile.aspect.LoggingAspect     : Target method is loginUser
+2023-01-03 19:55:49.576  INFO 16504 --- [http-nio-9001-exec-4] i.s.userprofile.aspect.LoggingAspect     : loginUser completed execution
+2023-01-03 19:56:43.031  INFO 16504 --- [SpringApplicationShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application USER-PROFILE-SERVICE with eureka with status DOWN
+2023-01-03 19:56:43.033  INFO 16504 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1672756003033, current=DOWN, previous=UP]
+2023-01-03 19:56:43.040  INFO 16504 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USER-PROFILE-SERVICE/192.168.1.39:user-profile-service:9001: registering service...
+2023-01-03 19:56:43.068  INFO 16504 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USER-PROFILE-SERVICE/192.168.1.39:user-profile-service:9001 - registration status: 204
+2023-01-03 19:56:43.261  INFO 16504 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-01-03 19:56:43.310  INFO 16504 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-01-03 19:56:43.420  INFO 16504 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-01-03 19:56:43.421  INFO 16504 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2023-01-03 19:56:46.429  INFO 16504 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2023-01-03 19:56:46.448  INFO 16504 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USER-PROFILE-SERVICE/192.168.1.39:user-profile-service:9001 - deregister  status: 200
+2023-01-03 19:56:46.452  INFO 16504 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2023-01-03 19:57:02.089  INFO 19352 --- [main] i.s.userprofile.UserprofileApplication   : Starting UserprofileApplication using Java 17.0.5 on LAPTOP-0JDK5SNE with PID 19352 (C:\natwest\Spring\Microservices\userprofile\target\classes started by Admin in C:\natwest\Spring\Microservices\userprofile)
+2023-01-03 19:57:02.091 DEBUG 19352 --- [main] i.s.userprofile.UserprofileApplication   : Running with Spring Boot v2.7.6, Spring v5.3.24
+2023-01-03 19:57:02.091  INFO 19352 --- [main] i.s.userprofile.UserprofileApplication   : No active profile set, falling back to 1 default profile: "default"
+2023-01-03 19:57:03.941  INFO 19352 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-01-03 19:57:04.148  INFO 19352 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 191 ms. Found 1 JPA repository interfaces.
+2023-01-03 19:57:04.599  INFO 19352 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=7c2aad3b-8b08-3530-8632-ed1d09072b20
+2023-01-03 19:57:06.027  INFO 19352 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9001 (http)
+2023-01-03 19:57:06.028  INFO 19352 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.35] using APR version [1.7.0].
+2023-01-03 19:57:06.028  INFO 19352 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2023-01-03 19:57:06.028  INFO 19352 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2023-01-03 19:57:06.032  INFO 19352 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1q  5 Jul 2022]
+2023-01-03 19:57:06.056  INFO 19352 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-01-03 19:57:06.057  INFO 19352 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.69]
+2023-01-03 19:57:06.367  INFO 19352 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-01-03 19:57:06.367  INFO 19352 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4161 ms
+2023-01-03 19:57:06.786  INFO 19352 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-01-03 19:57:06.889  INFO 19352 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.14.Final
+2023-01-03 19:57:07.241  INFO 19352 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-01-03 19:57:07.431  INFO 19352 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-01-03 19:57:08.195  INFO 19352 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-01-03 19:57:08.272  INFO 19352 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-01-03 19:57:10.705  INFO 19352 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-01-03 19:57:10.725  INFO 19352 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-01-03 19:57:12.576  WARN 19352 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-01-03 19:57:13.975  INFO 19352 --- [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2023-01-03 19:57:14.756  WARN 19352 --- [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2023-01-03 19:57:15.191  INFO 19352 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2023-01-03 19:57:17.488  INFO 19352 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2023-01-03 19:57:17.502  INFO 19352 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-01-03 19:57:17.571  INFO 19352 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2023-01-03 19:57:17.572  INFO 19352 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2023-01-03 19:57:17.572  INFO 19352 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2023-01-03 19:57:17.573  INFO 19352 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2023-01-03 19:57:17.574  INFO 19352 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2023-01-03 19:57:17.574  INFO 19352 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2023-01-03 19:57:17.574  INFO 19352 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2023-01-03 19:57:18.550  INFO 19352 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2023-01-03 19:57:18.570  INFO 19352 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2023-01-03 19:57:18.575  INFO 19352 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2023-01-03 19:57:18.619  INFO 19352 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1672756038589 with initial instances count: 1
+2023-01-03 19:57:18.621  INFO 19352 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application USER-PROFILE-SERVICE with eureka with status UP
+2023-01-03 19:57:18.622  INFO 19352 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1672756038622, current=UP, previous=STARTING]
+2023-01-03 19:57:18.626  INFO 19352 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USER-PROFILE-SERVICE/192.168.1.39:user-profile-service:9001: registering service...
+2023-01-03 19:57:18.794  INFO 19352 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9001 (http) with context path ''
+2023-01-03 19:57:18.800  INFO 19352 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 9001
+2023-01-03 19:57:18.875  INFO 19352 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USER-PROFILE-SERVICE/192.168.1.39:user-profile-service:9001 - registration status: 204
+2023-01-03 19:57:19.663  INFO 19352 --- [main] i.s.userprofile.UserprofileApplication   : Started UserprofileApplication in 20.149 seconds (JVM running for 23.93)
+2023-01-03 19:57:48.963  INFO 19352 --- [SpringApplicationShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application USER-PROFILE-SERVICE with eureka with status DOWN
+2023-01-03 19:57:48.963  INFO 19352 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1672756068963, current=DOWN, previous=UP]
+2023-01-03 19:57:48.963  INFO 19352 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USER-PROFILE-SERVICE/192.168.1.39:user-profile-service:9001: registering service...
+2023-01-03 19:57:48.969  INFO 19352 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USER-PROFILE-SERVICE/192.168.1.39:user-profile-service:9001 - registration status: 204
+2023-01-03 19:57:49.005  INFO 19352 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-01-03 19:57:49.011  INFO 19352 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-01-03 19:57:49.036  INFO 19352 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-01-03 19:57:49.037  INFO 19352 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2023-01-03 19:57:52.044  INFO 19352 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2023-01-03 19:57:52.052  INFO 19352 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USER-PROFILE-SERVICE/192.168.1.39:user-profile-service:9001 - deregister  status: 200
+2023-01-03 19:57:52.062  INFO 19352 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2023-01-03 19:57:56.461  INFO 15948 --- [main] i.s.userprofile.UserprofileApplication   : Starting UserprofileApplication using Java 17.0.5 on LAPTOP-0JDK5SNE with PID 15948 (C:\natwest\Spring\Microservices\userprofile\target\classes started by Admin in C:\natwest\Spring\Microservices\userprofile)
+2023-01-03 19:57:56.465 DEBUG 15948 --- [main] i.s.userprofile.UserprofileApplication   : Running with Spring Boot v2.7.6, Spring v5.3.24
+2023-01-03 19:57:56.466  INFO 15948 --- [main] i.s.userprofile.UserprofileApplication   : No active profile set, falling back to 1 default profile: "default"
+2023-01-03 19:57:57.784  INFO 15948 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-01-03 19:57:57.957  INFO 15948 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 159 ms. Found 1 JPA repository interfaces.
+2023-01-03 19:57:58.396  INFO 15948 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=7c2aad3b-8b08-3530-8632-ed1d09072b20
+2023-01-03 19:57:59.319  INFO 15948 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9001 (http)
+2023-01-03 19:57:59.324  INFO 15948 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.35] using APR version [1.7.0].
+2023-01-03 19:57:59.325  INFO 15948 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2023-01-03 19:57:59.325  INFO 15948 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2023-01-03 19:57:59.329  INFO 15948 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1q  5 Jul 2022]
+2023-01-03 19:57:59.344  INFO 15948 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-01-03 19:57:59.346  INFO 15948 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.69]
+2023-01-03 19:57:59.602  INFO 15948 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-01-03 19:57:59.602  INFO 15948 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3043 ms
+2023-01-03 19:58:00.012  INFO 15948 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-01-03 19:58:00.129  INFO 15948 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.14.Final
+2023-01-03 19:58:00.439  INFO 15948 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-01-03 19:58:00.546  INFO 15948 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-01-03 19:58:00.938  INFO 15948 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-01-03 19:58:00.967  INFO 15948 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-01-03 19:58:02.161  INFO 15948 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-01-03 19:58:02.169  INFO 15948 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-01-03 19:58:03.045  WARN 15948 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-01-03 19:58:03.938  INFO 15948 --- [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2023-01-03 19:58:04.150  WARN 15948 --- [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2023-01-03 19:58:04.223  INFO 15948 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2023-01-03 19:58:04.340  INFO 15948 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2023-01-03 19:58:04.346  INFO 15948 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-01-03 19:58:04.401  INFO 15948 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2023-01-03 19:58:04.402  INFO 15948 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2023-01-03 19:58:04.402  INFO 15948 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2023-01-03 19:58:04.402  INFO 15948 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2023-01-03 19:58:04.402  INFO 15948 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2023-01-03 19:58:04.402  INFO 15948 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2023-01-03 19:58:04.408  INFO 15948 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2023-01-03 19:58:04.875  INFO 15948 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2023-01-03 19:58:04.878  INFO 15948 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2023-01-03 19:58:04.881  INFO 15948 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2023-01-03 19:58:04.888  INFO 15948 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1672756084887 with initial instances count: 1
+2023-01-03 19:58:04.894  INFO 15948 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application USER-PROFILE-SERVICE with eureka with status UP
+2023-01-03 19:58:04.894  INFO 15948 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1672756084894, current=UP, previous=STARTING]
+2023-01-03 19:58:04.898  INFO 15948 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USER-PROFILE-SERVICE/192.168.1.39:user-profile-service:9001: registering service...
+2023-01-03 19:58:04.946  INFO 15948 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USER-PROFILE-SERVICE/192.168.1.39:user-profile-service:9001 - registration status: 204
+2023-01-03 19:58:04.955  INFO 15948 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9001 (http) with context path ''
+2023-01-03 19:58:04.956  INFO 15948 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 9001
+2023-01-03 19:58:05.445  INFO 15948 --- [main] i.s.userprofile.UserprofileApplication   : Started UserprofileApplication in 9.697 seconds (JVM running for 10.348)
+2023-01-03 19:58:41.359  INFO 15948 --- [http-nio-9001-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-01-03 19:58:41.359  INFO 15948 --- [http-nio-9001-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-01-03 19:58:41.361  INFO 15948 --- [http-nio-9001-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-01-03 19:58:41.434  INFO 15948 --- [http-nio-9001-exec-1] i.s.userprofile.model.UserCredentials    : setEmail function called....devendra
+2023-01-03 19:58:41.434  INFO 15948 --- [http-nio-9001-exec-1] i.s.userprofile.model.UserCredentials    : setPassword function called....devendra
+2023-01-03 19:58:41.441  INFO 15948 --- [http-nio-9001-exec-1] i.s.userprofile.aspect.LoggingAspect     : Inside the before advice
+2023-01-03 19:58:41.442  INFO 15948 --- [http-nio-9001-exec-1] i.s.userprofile.aspect.LoggingAspect     : Target method is loginUser
+2023-01-03 19:58:41.458  INFO 15948 --- [http-nio-9001-exec-1] i.s.userprofile.model.UserCredentials    : getEmail function called....devendra
+2023-01-03 19:58:41.767  INFO 15948 --- [http-nio-9001-exec-1] i.s.userprofile.model.UserCredentials    : getPassword function called....devendra
+2023-01-03 19:58:41.767  INFO 15948 --- [http-nio-9001-exec-1] i.s.userprofile.aspect.LoggingAspect     : Inside the After Returning advice
+2023-01-03 19:58:41.768  INFO 15948 --- [http-nio-9001-exec-1] i.s.userprofile.aspect.LoggingAspect     : Target method is loginUser
+2023-01-03 19:58:41.768  INFO 15948 --- [http-nio-9001-exec-1] i.s.userprofile.aspect.LoggingAspect     : Returned value is <200 OK OK,[]>
+2023-01-03 19:58:41.768  INFO 15948 --- [http-nio-9001-exec-1] i.s.userprofile.aspect.LoggingAspect     : Inside the After advice
+2023-01-03 19:58:41.768  INFO 15948 --- [http-nio-9001-exec-1] i.s.userprofile.aspect.LoggingAspect     : Target method is loginUser
+2023-01-03 19:58:41.768  INFO 15948 --- [http-nio-9001-exec-1] i.s.userprofile.aspect.LoggingAspect     : loginUser completed execution
+2023-01-03 19:59:05.270  INFO 15948 --- [http-nio-9001-exec-2] i.s.userprofile.model.UserCredentials    : setEmail function called....devendra
+2023-01-03 19:59:05.271  INFO 15948 --- [http-nio-9001-exec-2] i.s.userprofile.model.UserCredentials    : setPassword function called....devendra
+2023-01-03 19:59:05.272  INFO 15948 --- [http-nio-9001-exec-2] i.s.userprofile.aspect.LoggingAspect     : Inside the before advice
+2023-01-03 19:59:05.272  INFO 15948 --- [http-nio-9001-exec-2] i.s.userprofile.aspect.LoggingAspect     : Target method is loginUser
+2023-01-03 19:59:05.272  INFO 15948 --- [http-nio-9001-exec-2] i.s.userprofile.model.UserCredentials    : getEmail function called....devendra
+2023-01-03 19:59:05.282  INFO 15948 --- [http-nio-9001-exec-2] i.s.userprofile.model.UserCredentials    : getPassword function called....devendra
+2023-01-03 19:59:05.283  INFO 15948 --- [http-nio-9001-exec-2] i.s.userprofile.aspect.LoggingAspect     : Inside the After Returning advice
+2023-01-03 19:59:05.283  INFO 15948 --- [http-nio-9001-exec-2] i.s.userprofile.aspect.LoggingAspect     : Target method is loginUser
+2023-01-03 19:59:05.283  INFO 15948 --- [http-nio-9001-exec-2] i.s.userprofile.aspect.LoggingAspect     : Returned value is <200 OK OK,[]>
+2023-01-03 19:59:05.284  INFO 15948 --- [http-nio-9001-exec-2] i.s.userprofile.aspect.LoggingAspect     : Inside the After advice
+2023-01-03 19:59:05.284  INFO 15948 --- [http-nio-9001-exec-2] i.s.userprofile.aspect.LoggingAspect     : Target method is loginUser
+2023-01-03 19:59:05.284  INFO 15948 --- [http-nio-9001-exec-2] i.s.userprofile.aspect.LoggingAspect     : loginUser completed execution
+2023-01-03 19:59:15.802  INFO 15948 --- [http-nio-9001-exec-3] i.s.userprofile.model.UserCredentials    : setEmail function called....devendra
+2023-01-03 19:59:15.803  INFO 15948 --- [http-nio-9001-exec-3] i.s.userprofile.model.UserCredentials    : setPassword function called....devendra
+2023-01-03 19:59:15.804  INFO 15948 --- [http-nio-9001-exec-3] i.s.userprofile.aspect.LoggingAspect     : Inside the before advice
+2023-01-03 19:59:15.804  INFO 15948 --- [http-nio-9001-exec-3] i.s.userprofile.aspect.LoggingAspect     : Target method is loginUser
+2023-01-03 19:59:15.804  INFO 15948 --- [http-nio-9001-exec-3] i.s.userprofile.model.UserCredentials    : getEmail function called....devendra
+2023-01-03 19:59:15.811  INFO 15948 --- [http-nio-9001-exec-3] i.s.userprofile.model.UserCredentials    : getPassword function called....devendra
+2023-01-03 19:59:15.812  INFO 15948 --- [http-nio-9001-exec-3] i.s.userprofile.aspect.LoggingAspect     : Inside the After Throwing advice
+2023-01-03 19:59:15.812  INFO 15948 --- [http-nio-9001-exec-3] i.s.userprofile.aspect.LoggingAspect     : Target method is authenticateUser
+2023-01-03 19:59:15.812  INFO 15948 --- [http-nio-9001-exec-3] i.s.userprofile.aspect.LoggingAspect     : Exception thrown InValid credentials
+2023-01-03 19:59:15.813  INFO 15948 --- [http-nio-9001-exec-3] i.s.userprofile.aspect.LoggingAspect     : Inside the After advice
+2023-01-03 19:59:15.813  INFO 15948 --- [http-nio-9001-exec-3] i.s.userprofile.aspect.LoggingAspect     : Target method is loginUser
+2023-01-03 19:59:15.813  INFO 15948 --- [http-nio-9001-exec-3] i.s.userprofile.aspect.LoggingAspect     : loginUser completed execution
+2023-01-03 19:59:53.456  INFO 15948 --- [SpringApplicationShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application USER-PROFILE-SERVICE with eureka with status DOWN
+2023-01-03 19:59:53.467  INFO 15948 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1672756193467, current=DOWN, previous=UP]
+2023-01-03 19:59:53.489  INFO 15948 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USER-PROFILE-SERVICE/192.168.1.39:user-profile-service:9001: registering service...
+2023-01-03 19:59:53.520  INFO 15948 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USER-PROFILE-SERVICE/192.168.1.39:user-profile-service:9001 - registration status: 204
+2023-01-03 19:59:53.629  INFO 15948 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-01-03 19:59:53.639  INFO 15948 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-01-03 19:59:53.680  INFO 15948 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-01-03 19:59:53.680  INFO 15948 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2023-01-03 19:59:56.690  INFO 15948 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2023-01-03 19:59:56.698  INFO 15948 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USER-PROFILE-SERVICE/192.168.1.39:user-profile-service:9001 - deregister  status: 200
+2023-01-03 19:59:56.706  INFO 15948 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2023-01-03 20:00:04.575  INFO 5020 --- [main] i.s.userprofile.UserprofileApplication   : Starting UserprofileApplication using Java 17.0.5 on LAPTOP-0JDK5SNE with PID 5020 (C:\natwest\Spring\Microservices\userprofile\target\classes started by Admin in C:\natwest\Spring\Microservices\userprofile)
+2023-01-03 20:00:04.578 DEBUG 5020 --- [main] i.s.userprofile.UserprofileApplication   : Running with Spring Boot v2.7.6, Spring v5.3.24
+2023-01-03 20:00:04.579  INFO 5020 --- [main] i.s.userprofile.UserprofileApplication   : No active profile set, falling back to 1 default profile: "default"
+2023-01-03 20:00:06.361  INFO 5020 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-01-03 20:00:06.590  INFO 5020 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 214 ms. Found 1 JPA repository interfaces.
+2023-01-03 20:00:07.120  INFO 5020 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=7c2aad3b-8b08-3530-8632-ed1d09072b20
+2023-01-03 20:00:08.118  INFO 5020 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9001 (http)
+2023-01-03 20:00:08.119  INFO 5020 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.35] using APR version [1.7.0].
+2023-01-03 20:00:08.120  INFO 5020 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2023-01-03 20:00:08.121  INFO 5020 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2023-01-03 20:00:08.137  INFO 5020 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1q  5 Jul 2022]
+2023-01-03 20:00:08.154  INFO 5020 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-01-03 20:00:08.155  INFO 5020 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.69]
+2023-01-03 20:00:08.562  INFO 5020 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-01-03 20:00:08.563  INFO 5020 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3794 ms
+2023-01-03 20:00:09.008  INFO 5020 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-01-03 20:00:09.086  INFO 5020 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.14.Final
+2023-01-03 20:00:09.400  INFO 5020 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-01-03 20:00:09.559  INFO 5020 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-01-03 20:00:10.149  INFO 5020 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-01-03 20:00:10.193  INFO 5020 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-01-03 20:00:11.901  INFO 5020 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-01-03 20:00:11.910  INFO 5020 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-01-03 20:00:13.204  WARN 5020 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-01-03 20:00:14.333  INFO 5020 --- [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2023-01-03 20:00:14.764  WARN 5020 --- [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2023-01-03 20:00:14.810  INFO 5020 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2023-01-03 20:00:14.952  INFO 5020 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2023-01-03 20:00:14.967  INFO 5020 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-01-03 20:00:15.068  INFO 5020 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2023-01-03 20:00:15.070  INFO 5020 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2023-01-03 20:00:15.070  INFO 5020 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2023-01-03 20:00:15.071  INFO 5020 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2023-01-03 20:00:15.071  INFO 5020 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2023-01-03 20:00:15.071  INFO 5020 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2023-01-03 20:00:15.071  INFO 5020 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2023-01-03 20:00:15.676  INFO 5020 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2023-01-03 20:00:15.682  INFO 5020 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2023-01-03 20:00:15.687  INFO 5020 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2023-01-03 20:00:15.702  INFO 5020 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1672756215700 with initial instances count: 1
+2023-01-03 20:00:15.707  INFO 5020 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application USER-PROFILE-SERVICE with eureka with status UP
+2023-01-03 20:00:15.708  INFO 5020 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1672756215708, current=UP, previous=STARTING]
+2023-01-03 20:00:15.712  INFO 5020 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USER-PROFILE-SERVICE/192.168.1.39:user-profile-service:9001: registering service...
+2023-01-03 20:00:15.790  INFO 5020 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9001 (http) with context path ''
+2023-01-03 20:00:15.791  INFO 5020 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 9001
+2023-01-03 20:00:15.828  INFO 5020 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USER-PROFILE-SERVICE/192.168.1.39:user-profile-service:9001 - registration status: 204
+2023-01-03 20:00:16.519  INFO 5020 --- [main] i.s.userprofile.UserprofileApplication   : Started UserprofileApplication in 12.808 seconds (JVM running for 13.507)
+2023-01-03 20:00:43.969  INFO 5020 --- [http-nio-9001-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-01-03 20:00:43.969  INFO 5020 --- [http-nio-9001-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-01-03 20:00:43.971  INFO 5020 --- [http-nio-9001-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2023-01-03 20:00:44.010  INFO 5020 --- [http-nio-9001-exec-1] i.s.userprofile.model.UserCredentials    : setEmail function called....devendra
+2023-01-03 20:00:44.010  INFO 5020 --- [http-nio-9001-exec-1] i.s.userprofile.model.UserCredentials    : setPassword function called....devendra
+2023-01-03 20:00:44.016  INFO 5020 --- [http-nio-9001-exec-1] i.s.userprofile.aspect.LoggingAspect     : Inside the before advice
+2023-01-03 20:00:44.017  INFO 5020 --- [http-nio-9001-exec-1] i.s.userprofile.aspect.LoggingAspect     : Target method is loginUser
+2023-01-03 20:00:44.046  INFO 5020 --- [http-nio-9001-exec-1] i.s.userprofile.model.UserCredentials    : getEmail function called....devendra
+2023-01-03 20:00:44.128  INFO 5020 --- [http-nio-9001-exec-1] i.s.userprofile.model.UserCredentials    : getPassword function called....devendra
+2023-01-03 20:00:44.131  INFO 5020 --- [http-nio-9001-exec-1] i.s.userprofile.aspect.LoggingAspect     : Inside the After Returning advice
+2023-01-03 20:00:44.131  INFO 5020 --- [http-nio-9001-exec-1] i.s.userprofile.aspect.LoggingAspect     : Target method is loginUser
+2023-01-03 20:00:44.133  INFO 5020 --- [http-nio-9001-exec-1] i.s.userprofile.aspect.LoggingAspect     : Returned value is <200 OK OK,[]>
+2023-01-03 20:00:44.134  INFO 5020 --- [http-nio-9001-exec-1] i.s.userprofile.aspect.LoggingAspect     : Inside the After advice
+2023-01-03 20:00:44.135  INFO 5020 --- [http-nio-9001-exec-1] i.s.userprofile.aspect.LoggingAspect     : Target method is loginUser
+2023-01-03 20:00:44.135  INFO 5020 --- [http-nio-9001-exec-1] i.s.userprofile.aspect.LoggingAspect     : loginUser completed execution
+2023-01-03 20:00:54.996  INFO 5020 --- [http-nio-9001-exec-2] i.s.userprofile.model.UserCredentials    : setEmail function called....devendra
+2023-01-03 20:00:54.997  INFO 5020 --- [http-nio-9001-exec-2] i.s.userprofile.model.UserCredentials    : setPassword function called....devendra
+2023-01-03 20:00:55.006  INFO 5020 --- [http-nio-9001-exec-2] i.s.userprofile.aspect.LoggingAspect     : Inside the before advice
+2023-01-03 20:00:55.006  INFO 5020 --- [http-nio-9001-exec-2] i.s.userprofile.aspect.LoggingAspect     : Target method is loginUser
+2023-01-03 20:00:55.006  INFO 5020 --- [http-nio-9001-exec-2] i.s.userprofile.model.UserCredentials    : getEmail function called....devendra
+2023-01-03 20:00:55.010  INFO 5020 --- [http-nio-9001-exec-2] i.s.userprofile.model.UserCredentials    : getPassword function called....devendra
+2023-01-03 20:00:55.010  INFO 5020 --- [http-nio-9001-exec-2] i.s.userprofile.aspect.LoggingAspect     : Inside the After Returning advice
+2023-01-03 20:00:55.011  INFO 5020 --- [http-nio-9001-exec-2] i.s.userprofile.aspect.LoggingAspect     : Target method is loginUser
+2023-01-03 20:00:55.011  INFO 5020 --- [http-nio-9001-exec-2] i.s.userprofile.aspect.LoggingAspect     : Returned value is <200 OK OK,[]>
+2023-01-03 20:00:55.011  INFO 5020 --- [http-nio-9001-exec-2] i.s.userprofile.aspect.LoggingAspect     : Inside the After advice
+2023-01-03 20:00:55.011  INFO 5020 --- [http-nio-9001-exec-2] i.s.userprofile.aspect.LoggingAspect     : Target method is loginUser
+2023-01-03 20:00:55.011  INFO 5020 --- [http-nio-9001-exec-2] i.s.userprofile.aspect.LoggingAspect     : loginUser completed execution
+2023-01-03 20:01:04.995  INFO 5020 --- [http-nio-9001-exec-3] i.s.userprofile.model.UserCredentials    : setEmail function called....devendra
+2023-01-03 20:01:04.996  INFO 5020 --- [http-nio-9001-exec-3] i.s.userprofile.model.UserCredentials    : setPassword function called....devendra
+2023-01-03 20:01:04.996  INFO 5020 --- [http-nio-9001-exec-3] i.s.userprofile.aspect.LoggingAspect     : Inside the before advice
+2023-01-03 20:01:04.996  INFO 5020 --- [http-nio-9001-exec-3] i.s.userprofile.aspect.LoggingAspect     : Target method is loginUser
+2023-01-03 20:01:04.996  INFO 5020 --- [http-nio-9001-exec-3] i.s.userprofile.model.UserCredentials    : getEmail function called....devendra
+2023-01-03 20:01:04.998  INFO 5020 --- [http-nio-9001-exec-3] i.s.userprofile.model.UserCredentials    : getPassword function called....devendra
+2023-01-03 20:01:04.999  INFO 5020 --- [http-nio-9001-exec-3] i.s.userprofile.aspect.LoggingAspect     : Inside the After Throwing advice
+2023-01-03 20:01:04.999  INFO 5020 --- [http-nio-9001-exec-3] i.s.userprofile.aspect.LoggingAspect     : Target method is authenticateUser
+2023-01-03 20:01:04.999  INFO 5020 --- [http-nio-9001-exec-3] i.s.userprofile.aspect.LoggingAspect     : Exception thrown InValid credentials
+2023-01-03 20:01:04.999  INFO 5020 --- [http-nio-9001-exec-3] i.s.userprofile.aspect.LoggingAspect     : Inside the After advice
+2023-01-03 20:01:04.999  INFO 5020 --- [http-nio-9001-exec-3] i.s.userprofile.aspect.LoggingAspect     : Target method is loginUser
+2023-01-03 20:01:04.999  INFO 5020 --- [http-nio-9001-exec-3] i.s.userprofile.aspect.LoggingAspect     : loginUser completed execution
+2023-01-03 20:01:05.000  INFO 5020 --- [http-nio-9001-exec-3] i.s.u.exceptions.APIExceptionHandeller   : A TRACE Message to check handleCredentialsMismatchException called or not......devendra 
+2023-01-03 20:04:57.819  INFO 5020 --- [http-nio-9001-exec-5] i.s.userprofile.aspect.LoggingAspect     : Inside the before advice
+2023-01-03 20:04:57.820  INFO 5020 --- [http-nio-9001-exec-5] i.s.userprofile.aspect.LoggingAspect     : Target method is registerUser
+2023-01-03 20:04:57.966  INFO 5020 --- [http-nio-9001-exec-5] i.s.userprofile.aspect.LoggingAspect     : Inside the After Throwing advice
+2023-01-03 20:04:57.966  INFO 5020 --- [http-nio-9001-exec-5] i.s.userprofile.aspect.LoggingAspect     : Target method is registerUser
+2023-01-03 20:04:57.966  INFO 5020 --- [http-nio-9001-exec-5] i.s.userprofile.aspect.LoggingAspect     : Exception thrown User with the email already Exixts
+2023-01-03 20:04:57.967  INFO 5020 --- [http-nio-9001-exec-5] i.s.userprofile.aspect.LoggingAspect     : Inside the After advice
+2023-01-03 20:04:57.967  INFO 5020 --- [http-nio-9001-exec-5] i.s.userprofile.aspect.LoggingAspect     : Target method is registerUser
+2023-01-03 20:04:57.967  INFO 5020 --- [http-nio-9001-exec-5] i.s.userprofile.aspect.LoggingAspect     : registerUser completed execution
+2023-01-03 20:05:15.089  INFO 5020 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-01-03 20:05:22.427  INFO 5020 --- [SpringApplicationShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application USER-PROFILE-SERVICE with eureka with status DOWN
+2023-01-03 20:05:22.428  INFO 5020 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1672756522428, current=DOWN, previous=UP]
+2023-01-03 20:05:22.429  INFO 5020 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USER-PROFILE-SERVICE/192.168.1.39:user-profile-service:9001: registering service...
+2023-01-03 20:05:22.465  INFO 5020 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USER-PROFILE-SERVICE/192.168.1.39:user-profile-service:9001 - registration status: 204
+2023-01-03 20:05:22.557  INFO 5020 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-01-03 20:05:22.589  INFO 5020 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-01-03 20:05:22.647  INFO 5020 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-01-03 20:05:22.648  INFO 5020 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2023-01-03 20:05:25.653  INFO 5020 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2023-01-03 20:05:25.658  INFO 5020 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USER-PROFILE-SERVICE/192.168.1.39:user-profile-service:9001 - deregister  status: 200
+2023-01-03 20:05:25.663  INFO 5020 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2023-01-03 20:05:39.414  INFO 11624 --- [main] i.s.userprofile.UserprofileApplication   : Starting UserprofileApplication using Java 17.0.5 on LAPTOP-0JDK5SNE with PID 11624 (C:\natwest\Spring\Microservices\userprofile\target\classes started by Admin in C:\natwest\Spring\Microservices\userprofile)
+2023-01-03 20:05:39.418 DEBUG 11624 --- [main] i.s.userprofile.UserprofileApplication   : Running with Spring Boot v2.7.6, Spring v5.3.24
+2023-01-03 20:05:39.418  INFO 11624 --- [main] i.s.userprofile.UserprofileApplication   : No active profile set, falling back to 1 default profile: "default"
+2023-01-03 20:05:40.912  INFO 11624 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-01-03 20:05:41.090  INFO 11624 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 167 ms. Found 1 JPA repository interfaces.
+2023-01-03 20:05:41.489  INFO 11624 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=7c2aad3b-8b08-3530-8632-ed1d09072b20
+2023-01-03 20:05:42.342  INFO 11624 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9001 (http)
+2023-01-03 20:05:42.343  INFO 11624 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.35] using APR version [1.7.0].
+2023-01-03 20:05:42.344  INFO 11624 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2023-01-03 20:05:42.344  INFO 11624 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2023-01-03 20:05:42.349  INFO 11624 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1q  5 Jul 2022]
+2023-01-03 20:05:42.376  INFO 11624 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-01-03 20:05:42.376  INFO 11624 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.69]
+2023-01-03 20:05:42.672  INFO 11624 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-01-03 20:05:42.672  INFO 11624 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3194 ms
+2023-01-03 20:05:43.219  INFO 11624 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-01-03 20:05:43.376  INFO 11624 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.14.Final
+2023-01-03 20:05:43.781  INFO 11624 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-01-03 20:05:43.915  INFO 11624 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-01-03 20:05:44.825  INFO 11624 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-01-03 20:05:44.894  INFO 11624 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-01-03 20:05:46.164  INFO 11624 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-01-03 20:05:46.178  INFO 11624 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-01-03 20:05:47.521  WARN 11624 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-01-03 20:05:48.451  INFO 11624 --- [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2023-01-03 20:05:48.700  WARN 11624 --- [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2023-01-03 20:05:48.756  INFO 11624 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2023-01-03 20:05:48.926  INFO 11624 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2023-01-03 20:05:48.954  INFO 11624 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-01-03 20:05:48.978  INFO 11624 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2023-01-03 20:05:48.978  INFO 11624 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2023-01-03 20:05:48.978  INFO 11624 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2023-01-03 20:05:48.978  INFO 11624 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2023-01-03 20:05:48.979  INFO 11624 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2023-01-03 20:05:48.979  INFO 11624 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2023-01-03 20:05:48.980  INFO 11624 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2023-01-03 20:05:49.990  INFO 11624 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2023-01-03 20:05:49.995  INFO 11624 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2023-01-03 20:05:49.999  INFO 11624 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2023-01-03 20:05:50.005  INFO 11624 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1672756550003 with initial instances count: 1
+2023-01-03 20:05:50.008  INFO 11624 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application USER-PROFILE-SERVICE with eureka with status UP
+2023-01-03 20:05:50.008  INFO 11624 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1672756550008, current=UP, previous=STARTING]
+2023-01-03 20:05:50.010  INFO 11624 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USER-PROFILE-SERVICE/192.168.1.39:user-profile-service:9001: registering service...
+2023-01-03 20:05:50.051  INFO 11624 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USER-PROFILE-SERVICE/192.168.1.39:user-profile-service:9001 - registration status: 204
+2023-01-03 20:05:50.060  INFO 11624 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9001 (http) with context path ''
+2023-01-03 20:05:50.061  INFO 11624 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 9001
+2023-01-03 20:05:50.532  INFO 11624 --- [main] i.s.userprofile.UserprofileApplication   : Started UserprofileApplication in 12.114 seconds (JVM running for 13.066)
+2023-01-03 20:06:46.576  INFO 11624 --- [http-nio-9001-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-01-03 20:06:46.577  INFO 11624 --- [http-nio-9001-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-01-03 20:06:46.580  INFO 11624 --- [http-nio-9001-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2023-01-03 20:06:46.671  INFO 11624 --- [http-nio-9001-exec-1] i.s.userprofile.aspect.LoggingAspect     : Inside the before advice
+2023-01-03 20:06:46.673  INFO 11624 --- [http-nio-9001-exec-1] i.s.userprofile.aspect.LoggingAspect     : Target method is registerUser
+2023-01-03 20:06:46.895  INFO 11624 --- [http-nio-9001-exec-1] i.s.userprofile.aspect.LoggingAspect     : Inside the After Throwing advice
+2023-01-03 20:06:46.896  INFO 11624 --- [http-nio-9001-exec-1] i.s.userprofile.aspect.LoggingAspect     : Target method is registerUser
+2023-01-03 20:06:46.896  INFO 11624 --- [http-nio-9001-exec-1] i.s.userprofile.aspect.LoggingAspect     : Exception thrown User with the email already Exixts
+2023-01-03 20:06:46.896  INFO 11624 --- [http-nio-9001-exec-1] i.s.userprofile.aspect.LoggingAspect     : Inside the After advice
+2023-01-03 20:06:46.897  INFO 11624 --- [http-nio-9001-exec-1] i.s.userprofile.aspect.LoggingAspect     : Target method is registerUser
+2023-01-03 20:06:46.897  INFO 11624 --- [http-nio-9001-exec-1] i.s.userprofile.aspect.LoggingAspect     : registerUser completed execution
+2023-01-03 20:06:46.899 ERROR 11624 --- [http-nio-9001-exec-1] i.s.u.exceptions.APIExceptionHandeller   : An error Message to check handleUserExistsException called or not......devendra 
+2023-01-03 20:08:22.026  INFO 11624 --- [SpringApplicationShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application USER-PROFILE-SERVICE with eureka with status DOWN
+2023-01-03 20:08:22.027  INFO 11624 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1672756702027, current=DOWN, previous=UP]
+2023-01-03 20:08:22.028  INFO 11624 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USER-PROFILE-SERVICE/192.168.1.39:user-profile-service:9001: registering service...
+2023-01-03 20:08:22.065  INFO 11624 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-01-03 20:08:22.109  INFO 11624 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USER-PROFILE-SERVICE/192.168.1.39:user-profile-service:9001 - registration status: 204
+2023-01-03 20:08:22.067  INFO 11624 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-01-03 20:08:22.195  INFO 11624 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-01-03 20:08:22.196  INFO 11624 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2023-01-03 20:08:25.203  INFO 11624 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2023-01-03 20:08:25.213  INFO 11624 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USER-PROFILE-SERVICE/192.168.1.39:user-profile-service:9001 - deregister  status: 200
+2023-01-03 20:08:25.226  INFO 11624 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2023-01-03 20:08:31.658  INFO 17736 --- [main] i.s.userprofile.UserprofileApplication   : Starting UserprofileApplication using Java 17.0.5 on LAPTOP-0JDK5SNE with PID 17736 (C:\natwest\Spring\Microservices\userprofile\target\classes started by Admin in C:\natwest\Spring\Microservices\userprofile)
+2023-01-03 20:08:31.660 DEBUG 17736 --- [main] i.s.userprofile.UserprofileApplication   : Running with Spring Boot v2.7.6, Spring v5.3.24
+2023-01-03 20:08:31.662  INFO 17736 --- [main] i.s.userprofile.UserprofileApplication   : No active profile set, falling back to 1 default profile: "default"
+2023-01-03 20:08:33.106  INFO 17736 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-01-03 20:08:33.283  INFO 17736 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 162 ms. Found 1 JPA repository interfaces.
+2023-01-03 20:08:33.726  INFO 17736 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=7c2aad3b-8b08-3530-8632-ed1d09072b20
+2023-01-03 20:08:34.542  INFO 17736 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9001 (http)
+2023-01-03 20:08:34.544  INFO 17736 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.35] using APR version [1.7.0].
+2023-01-03 20:08:34.544  INFO 17736 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2023-01-03 20:08:34.544  INFO 17736 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2023-01-03 20:08:34.547  INFO 17736 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1q  5 Jul 2022]
+2023-01-03 20:08:34.558  INFO 17736 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-01-03 20:08:34.559  INFO 17736 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.69]
+2023-01-03 20:08:34.772  INFO 17736 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-01-03 20:08:34.773  INFO 17736 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2986 ms
+2023-01-03 20:08:35.198  INFO 17736 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-01-03 20:08:35.259  INFO 17736 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.14.Final
+2023-01-03 20:08:35.547  INFO 17736 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-01-03 20:08:35.673  INFO 17736 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-01-03 20:08:36.219  INFO 17736 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-01-03 20:08:36.248  INFO 17736 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-01-03 20:08:37.078  INFO 17736 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-01-03 20:08:37.086  INFO 17736 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-01-03 20:08:38.310  WARN 17736 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-01-03 20:08:39.757  INFO 17736 --- [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2023-01-03 20:08:40.081  WARN 17736 --- [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2023-01-03 20:08:40.127  INFO 17736 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2023-01-03 20:08:40.306  INFO 17736 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2023-01-03 20:08:40.312  INFO 17736 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-01-03 20:08:40.393  INFO 17736 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2023-01-03 20:08:40.394  INFO 17736 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2023-01-03 20:08:40.394  INFO 17736 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2023-01-03 20:08:40.394  INFO 17736 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2023-01-03 20:08:40.394  INFO 17736 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2023-01-03 20:08:40.394  INFO 17736 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2023-01-03 20:08:40.394  INFO 17736 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2023-01-03 20:08:41.226  INFO 17736 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2023-01-03 20:08:41.231  INFO 17736 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2023-01-03 20:08:41.237  INFO 17736 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2023-01-03 20:08:41.253  INFO 17736 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1672756721252 with initial instances count: 1
+2023-01-03 20:08:41.256  INFO 17736 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application USER-PROFILE-SERVICE with eureka with status UP
+2023-01-03 20:08:41.258  INFO 17736 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1672756721258, current=UP, previous=STARTING]
+2023-01-03 20:08:41.296  INFO 17736 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USER-PROFILE-SERVICE/192.168.1.39:user-profile-service:9001: registering service...
+2023-01-03 20:08:41.404  INFO 17736 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9001 (http) with context path ''
+2023-01-03 20:08:41.405  INFO 17736 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 9001
+2023-01-03 20:08:41.501  INFO 17736 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USER-PROFILE-SERVICE/192.168.1.39:user-profile-service:9001 - registration status: 204
+2023-01-03 20:08:42.111  INFO 17736 --- [main] i.s.userprofile.UserprofileApplication   : Started UserprofileApplication in 11.198 seconds (JVM running for 11.755)
+2023-01-03 20:09:57.274  INFO 17736 --- [SpringApplicationShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application USER-PROFILE-SERVICE with eureka with status DOWN
+2023-01-03 20:09:57.275  INFO 17736 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1672756797275, current=DOWN, previous=UP]
+2023-01-03 20:09:57.275  INFO 17736 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USER-PROFILE-SERVICE/192.168.1.39:user-profile-service:9001: registering service...
+2023-01-03 20:09:57.297  INFO 17736 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-01-03 20:09:57.300  INFO 17736 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-01-03 20:09:57.310  INFO 17736 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-01-03 20:09:57.311  INFO 17736 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2023-01-03 20:09:57.336  INFO 17736 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USER-PROFILE-SERVICE/192.168.1.39:user-profile-service:9001 - registration status: 204
+2023-01-03 20:09:57.345  INFO 17736 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2023-01-03 20:09:57.372  INFO 17736 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USER-PROFILE-SERVICE/192.168.1.39:user-profile-service:9001 - deregister  status: 200
+2023-01-03 20:09:57.384  INFO 17736 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2023-01-03 20:10:05.086  INFO 12028 --- [main] i.s.userprofile.UserprofileApplication   : Starting UserprofileApplication using Java 17.0.5 on LAPTOP-0JDK5SNE with PID 12028 (C:\natwest\Spring\Microservices\userprofile\target\classes started by Admin in C:\natwest\Spring\Microservices\userprofile)
+2023-01-03 20:10:05.089 DEBUG 12028 --- [main] i.s.userprofile.UserprofileApplication   : Running with Spring Boot v2.7.6, Spring v5.3.24
+2023-01-03 20:10:05.090  INFO 12028 --- [main] i.s.userprofile.UserprofileApplication   : No active profile set, falling back to 1 default profile: "default"
+2023-01-03 20:10:06.468  INFO 12028 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-01-03 20:10:06.741  INFO 12028 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 260 ms. Found 1 JPA repository interfaces.
+2023-01-03 20:10:07.122  INFO 12028 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=7c2aad3b-8b08-3530-8632-ed1d09072b20
+2023-01-03 20:10:07.982  INFO 12028 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9001 (http)
+2023-01-03 20:10:07.985  INFO 12028 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.35] using APR version [1.7.0].
+2023-01-03 20:10:07.986  INFO 12028 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2023-01-03 20:10:07.987  INFO 12028 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2023-01-03 20:10:07.991  INFO 12028 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1q  5 Jul 2022]
+2023-01-03 20:10:08.002  INFO 12028 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-01-03 20:10:08.003  INFO 12028 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.69]
+2023-01-03 20:10:08.326  INFO 12028 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-01-03 20:10:08.326  INFO 12028 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3104 ms
+2023-01-03 20:10:08.594  INFO 12028 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-01-03 20:10:08.675  INFO 12028 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.14.Final
+2023-01-03 20:10:08.977  INFO 12028 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-01-03 20:10:09.089  INFO 12028 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-01-03 20:10:09.569  INFO 12028 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-01-03 20:10:09.618  INFO 12028 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-01-03 20:10:10.082 ERROR 12028 --- [main] j.LocalContainerEntityManagerFactoryBean : Failed to initialize JPA EntityManagerFactory: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Could not determine type for: org.slf4j.Logger, at table: regd_users, for columns: [org.hibernate.mapping.Column(logger)]
+2023-01-03 20:10:10.082  WARN 12028 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Could not determine type for: org.slf4j.Logger, at table: regd_users, for columns: [org.hibernate.mapping.Column(logger)]
+2023-01-03 20:10:10.083  INFO 12028 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-01-03 20:10:10.118  INFO 12028 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-01-03 20:10:10.121  INFO 12028 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-01-03 20:10:10.150  INFO 12028 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-01-03 20:10:10.891 ERROR 12028 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Could not determine type for: org.slf4j.Logger, at table: regd_users, for columns: [org.hibernate.mapping.Column(logger)]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147) ~[spring-boot-2.7.6.jar:2.7.6]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731) ~[spring-boot-2.7.6.jar:2.7.6]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408) ~[spring-boot-2.7.6.jar:2.7.6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307) ~[spring-boot-2.7.6.jar:2.7.6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303) ~[spring-boot-2.7.6.jar:2.7.6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292) ~[spring-boot-2.7.6.jar:2.7.6]
+	at in.stackroute.userprofile.UserprofileApplication.main(UserprofileApplication.java:16) ~[classes/:na]
+Caused by: javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Could not determine type for: org.slf4j.Logger, at table: regd_users, for columns: [org.hibernate.mapping.Column(logger)]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:421) ~[spring-orm-5.3.24.jar:5.3.24]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396) ~[spring-orm-5.3.24.jar:5.3.24]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341) ~[spring-orm-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800) ~[spring-beans-5.3.24.jar:5.3.24]
+	... 16 common frames omitted
+Caused by: org.hibernate.MappingException: Could not determine type for: org.slf4j.Logger, at table: regd_users, for columns: [org.hibernate.mapping.Column(logger)]
+	at org.hibernate.mapping.SimpleValue.getType(SimpleValue.java:515) ~[hibernate-core-5.6.14.Final.jar:5.6.14.Final]
+	at org.hibernate.mapping.SimpleValue.isValid(SimpleValue.java:482) ~[hibernate-core-5.6.14.Final.jar:5.6.14.Final]
+	at org.hibernate.mapping.Property.isValid(Property.java:231) ~[hibernate-core-5.6.14.Final.jar:5.6.14.Final]
+	at org.hibernate.mapping.PersistentClass.validate(PersistentClass.java:627) ~[hibernate-core-5.6.14.Final.jar:5.6.14.Final]
+	at org.hibernate.mapping.RootClass.validate(RootClass.java:267) ~[hibernate-core-5.6.14.Final.jar:5.6.14.Final]
+	at org.hibernate.boot.internal.MetadataImpl.validate(MetadataImpl.java:359) ~[hibernate-core-5.6.14.Final.jar:5.6.14.Final]
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:314) ~[hibernate-core-5.6.14.Final.jar:5.6.14.Final]
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:471) ~[hibernate-core-5.6.14.Final.jar:5.6.14.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1498) ~[hibernate-core-5.6.14.Final.jar:5.6.14.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58) ~[spring-orm-5.3.24.jar:5.3.24]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365) ~[spring-orm-5.3.24.jar:5.3.24]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409) ~[spring-orm-5.3.24.jar:5.3.24]
+	... 20 common frames omitted
+
+2023-01-03 20:13:59.519  INFO 4988 --- [main] i.s.userprofile.UserprofileApplication   : Starting UserprofileApplication using Java 17.0.5 on LAPTOP-0JDK5SNE with PID 4988 (C:\natwest\Spring\Microservices\userprofile\target\classes started by Admin in C:\natwest\Spring\Microservices\userprofile)
+2023-01-03 20:13:59.564 DEBUG 4988 --- [main] i.s.userprofile.UserprofileApplication   : Running with Spring Boot v2.7.6, Spring v5.3.24
+2023-01-03 20:13:59.566  INFO 4988 --- [main] i.s.userprofile.UserprofileApplication   : No active profile set, falling back to 1 default profile: "default"
+2023-01-03 20:14:07.093  INFO 4988 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-01-03 20:14:10.551  INFO 4988 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 3433 ms. Found 1 JPA repository interfaces.
+2023-01-03 20:14:11.148  INFO 4988 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=7c2aad3b-8b08-3530-8632-ed1d09072b20
+2023-01-03 20:14:18.591  INFO 4988 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9001 (http)
+2023-01-03 20:14:18.592  INFO 4988 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.35] using APR version [1.7.0].
+2023-01-03 20:14:18.593  INFO 4988 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2023-01-03 20:14:18.593  INFO 4988 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2023-01-03 20:14:19.309  INFO 4988 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1q  5 Jul 2022]
+2023-01-03 20:14:19.577  INFO 4988 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-01-03 20:14:19.579  INFO 4988 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.69]
+2023-01-03 20:14:20.633  INFO 4988 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-01-03 20:14:20.672  INFO 4988 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 20929 ms
+2023-01-03 20:14:21.994  INFO 4988 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-01-03 20:14:22.822  INFO 4988 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.14.Final
+2023-01-03 20:14:24.557  INFO 4988 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-01-03 20:14:25.895  INFO 4988 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-01-03 20:14:29.804  INFO 4988 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-01-03 20:14:30.139  INFO 4988 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-01-03 20:14:32.013 ERROR 4988 --- [main] j.LocalContainerEntityManagerFactoryBean : Failed to initialize JPA EntityManagerFactory: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Could not determine type for: org.slf4j.Logger, at table: regd_users, for columns: [org.hibernate.mapping.Column(logger)]
+2023-01-03 20:14:32.015  WARN 4988 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Could not determine type for: org.slf4j.Logger, at table: regd_users, for columns: [org.hibernate.mapping.Column(logger)]
+2023-01-03 20:14:32.017  INFO 4988 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-01-03 20:14:32.074  INFO 4988 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-01-03 20:14:32.078  INFO 4988 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-01-03 20:14:32.129  INFO 4988 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-01-03 20:14:32.270 ERROR 4988 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Could not determine type for: org.slf4j.Logger, at table: regd_users, for columns: [org.hibernate.mapping.Column(logger)]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147) ~[spring-boot-2.7.6.jar:2.7.6]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731) ~[spring-boot-2.7.6.jar:2.7.6]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408) ~[spring-boot-2.7.6.jar:2.7.6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307) ~[spring-boot-2.7.6.jar:2.7.6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303) ~[spring-boot-2.7.6.jar:2.7.6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292) ~[spring-boot-2.7.6.jar:2.7.6]
+	at in.stackroute.userprofile.UserprofileApplication.main(UserprofileApplication.java:16) ~[classes/:na]
+Caused by: javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Could not determine type for: org.slf4j.Logger, at table: regd_users, for columns: [org.hibernate.mapping.Column(logger)]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:421) ~[spring-orm-5.3.24.jar:5.3.24]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396) ~[spring-orm-5.3.24.jar:5.3.24]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341) ~[spring-orm-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800) ~[spring-beans-5.3.24.jar:5.3.24]
+	... 16 common frames omitted
+Caused by: org.hibernate.MappingException: Could not determine type for: org.slf4j.Logger, at table: regd_users, for columns: [org.hibernate.mapping.Column(logger)]
+	at org.hibernate.mapping.SimpleValue.getType(SimpleValue.java:515) ~[hibernate-core-5.6.14.Final.jar:5.6.14.Final]
+	at org.hibernate.mapping.SimpleValue.isValid(SimpleValue.java:482) ~[hibernate-core-5.6.14.Final.jar:5.6.14.Final]
+	at org.hibernate.mapping.Property.isValid(Property.java:231) ~[hibernate-core-5.6.14.Final.jar:5.6.14.Final]
+	at org.hibernate.mapping.PersistentClass.validate(PersistentClass.java:627) ~[hibernate-core-5.6.14.Final.jar:5.6.14.Final]
+	at org.hibernate.mapping.RootClass.validate(RootClass.java:267) ~[hibernate-core-5.6.14.Final.jar:5.6.14.Final]
+	at org.hibernate.boot.internal.MetadataImpl.validate(MetadataImpl.java:359) ~[hibernate-core-5.6.14.Final.jar:5.6.14.Final]
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:314) ~[hibernate-core-5.6.14.Final.jar:5.6.14.Final]
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:471) ~[hibernate-core-5.6.14.Final.jar:5.6.14.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1498) ~[hibernate-core-5.6.14.Final.jar:5.6.14.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58) ~[spring-orm-5.3.24.jar:5.3.24]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365) ~[spring-orm-5.3.24.jar:5.3.24]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409) ~[spring-orm-5.3.24.jar:5.3.24]
+	... 20 common frames omitted
+
+2023-01-03 20:16:49.184  INFO 3836 --- [main] i.s.userprofile.UserprofileApplication   : Starting UserprofileApplication using Java 17.0.5 on LAPTOP-0JDK5SNE with PID 3836 (C:\natwest\Spring\Microservices\userprofile\target\classes started by Admin in C:\natwest\Spring\Microservices\userprofile)
+2023-01-03 20:16:49.186 DEBUG 3836 --- [main] i.s.userprofile.UserprofileApplication   : Running with Spring Boot v2.7.6, Spring v5.3.24
+2023-01-03 20:16:49.188  INFO 3836 --- [main] i.s.userprofile.UserprofileApplication   : No active profile set, falling back to 1 default profile: "default"
+2023-01-03 20:17:06.937  INFO 3836 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-01-03 20:17:10.645  INFO 3836 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 3632 ms. Found 1 JPA repository interfaces.
+2023-01-03 20:17:11.894  INFO 3836 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=7c2aad3b-8b08-3530-8632-ed1d09072b20
+2023-01-03 20:17:22.997  INFO 3836 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9001 (http)
+2023-01-03 20:17:22.999  INFO 3836 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.35] using APR version [1.7.0].
+2023-01-03 20:17:22.999  INFO 3836 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2023-01-03 20:17:23.000  INFO 3836 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2023-01-03 20:17:24.161  INFO 3836 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1q  5 Jul 2022]
+2023-01-03 20:17:24.581  INFO 3836 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-01-03 20:17:24.583  INFO 3836 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.69]
+2023-01-03 20:17:25.996  INFO 3836 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-01-03 20:17:25.999  INFO 3836 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 36540 ms
+2023-01-03 20:17:27.340  INFO 3836 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-01-03 20:17:28.755  INFO 3836 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.14.Final
+2023-01-03 20:17:31.496  INFO 3836 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-01-03 20:17:32.657  INFO 3836 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-01-03 20:17:40.393  INFO 3836 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-01-03 20:17:41.270  INFO 3836 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-01-03 20:17:53.270  INFO 3836 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-01-03 20:17:53.293  INFO 3836 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-01-03 20:17:57.889  WARN 3836 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-01-03 20:17:59.399  INFO 3836 --- [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2023-01-03 20:17:59.733  WARN 3836 --- [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2023-01-03 20:17:59.773  INFO 3836 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2023-01-03 20:18:00.954  INFO 3836 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2023-01-03 20:18:00.973  INFO 3836 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-01-03 20:18:01.181  INFO 3836 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2023-01-03 20:18:01.182  INFO 3836 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2023-01-03 20:18:01.182  INFO 3836 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2023-01-03 20:18:01.182  INFO 3836 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2023-01-03 20:18:01.182  INFO 3836 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2023-01-03 20:18:01.183  INFO 3836 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2023-01-03 20:18:01.183  INFO 3836 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2023-01-03 20:18:02.486  INFO 3836 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2023-01-03 20:18:02.497  INFO 3836 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2023-01-03 20:18:02.500  INFO 3836 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2023-01-03 20:18:02.532  INFO 3836 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1672757282504 with initial instances count: 1
+2023-01-03 20:18:02.536  INFO 3836 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application USER-PROFILE-SERVICE with eureka with status UP
+2023-01-03 20:18:02.536  INFO 3836 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1672757282536, current=UP, previous=STARTING]
+2023-01-03 20:18:02.539  INFO 3836 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USER-PROFILE-SERVICE/192.168.1.39:user-profile-service:9001: registering service...
+2023-01-03 20:18:02.627  INFO 3836 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9001 (http) with context path ''
+2023-01-03 20:18:02.628  INFO 3836 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 9001
+2023-01-03 20:18:02.653  INFO 3836 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USER-PROFILE-SERVICE/192.168.1.39:user-profile-service:9001 - registration status: 204
+2023-01-03 20:18:03.061  INFO 3836 --- [main] i.s.userprofile.UserprofileApplication   : Started UserprofileApplication in 77.144 seconds (JVM running for 79.781)
+2023-01-03 20:18:57.612  INFO 3836 --- [SpringApplicationShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application USER-PROFILE-SERVICE with eureka with status DOWN
+2023-01-03 20:18:57.613  INFO 3836 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1672757337613, current=DOWN, previous=UP]
+2023-01-03 20:18:57.615  INFO 3836 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USER-PROFILE-SERVICE/192.168.1.39:user-profile-service:9001: registering service...
+2023-01-03 20:18:57.670  INFO 3836 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-01-03 20:18:57.672  INFO 3836 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-01-03 20:18:57.689  INFO 3836 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USER-PROFILE-SERVICE/192.168.1.39:user-profile-service:9001 - registration status: 204
+2023-01-03 20:18:57.718  INFO 3836 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-01-03 20:18:57.719  INFO 3836 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2023-01-03 20:19:00.731  INFO 3836 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2023-01-03 20:19:01.271  INFO 3836 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USER-PROFILE-SERVICE/192.168.1.39:user-profile-service:9001 - deregister  status: 200
+2023-01-03 20:19:01.284  INFO 3836 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
