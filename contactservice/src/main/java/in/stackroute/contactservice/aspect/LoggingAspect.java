@@ -1,4 +1,4 @@
-package in.stackroute.userprofile.aspect;
+package in.stackroute.contactservice.aspect;
 
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.annotation.*;
@@ -40,13 +40,13 @@ public class LoggingAspect {
         logger.info("Returned value is "+ returnValue);
     }
 
-    @AfterThrowing(value = "execution(* in.stackroute.userprofile.service.UserServiceImpl .*(..))", throwing = "exception")
+    @AfterThrowing(value = "execution(* in.stackroute.contactservice.service.ContactServiceImpl .*(..))", throwing = "exception")
     public void afterThrowingAdviceMethod(JoinPoint joinPoint, Exception exception){
         logger.info("Inside the After Throwing advice");
         logger.info("Target method is "+ joinPoint.getSignature().getName());
         logger.info("Exception thrown "+ exception.getMessage());
     }
 
-    @Pointcut(value = "execution(* in.stackroute.userprofile.controller.UserController .*(..))")
+    @Pointcut(value = "execution(* in.stackroute.contactservice.controller.ContactController .*(..))")
     public void pointCut(){}
 }

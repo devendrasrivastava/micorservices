@@ -15,12 +15,12 @@ public class ApigatewayApplication {
 		SpringApplication.run(ApigatewayApplication.class, args);
 	}
 
-	@Bean
-	public RouteLocator apiRoutes(RouteLocatorBuilder builder){
-		return builder.routes()
-				.route("contacts_route",route -> route.path("/api/v1/contacts/**").uri("lb://contacts-service"))
-				.route("users_route",route->route.path("/api/v1/users/**").uri("lb://user-profile-service"))
-				.build();
-	}
+//	@Bean
+//	public RouteLocator apiRoutes(RouteLocatorBuilder builder){
+//		return builder.routes()
+//				.route("contacts_route",route -> route.path("/api/v1/contacts/**").uri("lb://contacts-service"))
+//				.route("users_route",route->route.path("/api/v1/users/**").uri("lb://user-profile-service"))
+//				.build();
+//	}
 
 }
