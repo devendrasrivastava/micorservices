@@ -5,6 +5,7 @@ import javax.persistence.*;
 
 
 
+
 @Entity
 @Table(name = "REGD_USERS")
 public class User {
@@ -19,7 +20,6 @@ public class User {
     private String password;
 
     public User() {
-
     }
 
     public User(int userId, String name, String email, String password) {
@@ -27,7 +27,6 @@ public class User {
         this.name = name;
         this.email = email;
         this.password = password;
-
     }
 
     public int getUserId() {

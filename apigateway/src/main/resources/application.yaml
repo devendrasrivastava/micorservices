@@ -16,6 +16,9 @@ spring:
           predicates:
             - Path= /api/v1/users/**
 
+
+#for java based annotation.....
+#comment out line 4 to 17 and uncomment below code for java based + un comment line 18 to 24 in ApigatewayApplication
 #eureka:
 #  instance:
 #    hostname: localhost
